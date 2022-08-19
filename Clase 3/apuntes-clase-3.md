@@ -1,6 +1,10 @@
 # Documentacion de Markdown files
 [Click aca para ver la documentacion de los Markdown files.](https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
+------------------
+18/08/2022
+------------------
+
 
 # Ciclos 
 ## Clase numero 3 - CoderHouse
@@ -131,4 +135,58 @@ do {
     console.log(x);
     x++;
 }while (x < 30);
+```
+
+# Cliclo FOR
+## For
+### Recordatorio: 
+Se repite una cantidad de veces especifica.
+
+### Sintaxis:
+for (desde; hasta; actualizacion) {
+    // Mientras dure el ciclo se ejecuta.
+}
+
+### Ejemplo 1.
+Primer acercamiento al for
+```
+for (let i = 0; i < 10; i++){
+    alert(`El valor de I es ${i}`);
+}
+```
+
+### Ejemplo 2.
+Tabla de multiplicar.
+```
+let numero = Number(prompt('Ingrese un numero: '));
+
+for (let i = 1; i <=10; i++){
+    let resultado = numero * i;
+    alert(`${numero} x ${i} = ${resultado}`);
+}
+```
+
+### Ejemplo 3
+Otro acercamiento, uso de condicionales dentro del for.
+```
+for (let i = 1; 1 <= 10; i++) {
+    if (i===6){
+        break
+    }
+    alert(`El valor de I es ${i}`);
+}
+*Ayuda* ---> El usar break hace que el ciclo se interrumpa como si hubiera finalizado al llegar al valor 6.
+``` 
+
+
+### Ejemplo 4
+Continue
+```
+for (let i = 1; i <= 10; i++) {
+    if (i===6) {
+        continue;
+    }
+    alert(`El valor de I es ${i}`);
+}
+*Ayuda* ---> Con el continue saltea el valor de 6 y continua con el ciclo
 ```

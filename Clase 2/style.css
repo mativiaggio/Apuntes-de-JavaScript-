@@ -1,0 +1,13 @@
+* {
+    font: inherit;
+    font-size: 45px;
+    background-color: rgb(0, 139, 46);
+    color: white;
+}
+div {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,97 @@
+# Documentacion de Markdown files
+[Click aca para ver la documentacion de los Markdown files.](https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
+# APUNTES DE CLASE 1
+ 
+### Comentarios:
+    Son utilizados para escribir sin que el lenguaje ejecute, son de gran ayuda para la persona que lee el codigo.
+
+    Se generan escribiendo "//" al inicio de cada linea. ejemplo: 
+    // ejemplo 1
+
+    Es posible comentar varias lineas a la vez utilizando "/*" al inicio y "*/" al final, ejemplo:
+    /*
+    ejemplo
+    numero
+    dos
+    */
+
+### console.log()
+    Se utiliza para 'imprimir' algo por consola. Ejemplo:
+    console.log('Hello World!') ---> Si se ejecta se puede ver en la consola el string o cadena de caracteres 'Hello World!'
+
+### alert()
+    Se utiliza para 'imprimir' algo por el navegador (lo ve el usuario). Ejemplo:
+    alert('Hello World!') ---> El usuario podra ver en su navegador un cartel que dice 'Hello World!'
+
+### Variables:
+    Se utilizan para almacenar datos. Se vieron dos tipos de variables: let y const.
+
+    let:
+    Pueden ser inicidas vacias para luego darles valor, ejemplo:
+
+    let nombre;
+    nombre = 'Carlos';
+
+    * importante * --> El valor de una variable puede ser impreso con console.log() y con alert(), un ejemplo de esto seria:
+
+    let nombre = 'Carlos';
+    alert(nombre); ---> Lo ve el usuario.
+    console.log(nombre) ---> Se ve en la consola.
+
+
+### Const:
+    Similar a let, con la diferencia que NO pueden ser iniciadas vacias como let, deben siempre ser iniciadas con un valor. El valor NO puede cambiar luego *. Se recomienda definirlas con mayusculas.
+
+    * El valor no pude cambiar:
+```
+const NOMBRE = 'Carlos';
+const NOMBRE = 'Mariana'; ---> Este codigo dara error.
+```
+
+
+### CONCATENACION:
+    Es la 'suma' de cadenas de datos (strings), ejemplo:
+```
+let nombre = 'Mariana'
+
+let apellido = 'Rodriguez'
+
+let nombreCompleto = nombre + ' ' + apellido; --> Si no se deja ' ' entre medio de los valores se imprimira todo junto (MarianaRodriguez)
+
+console.log(nombreCompleto); ---> Se podra ver por consola 'Mariana Rodriguez'
+```
+
+### OPERACIONES MATEMATICAS:
+    Se utilizan simbolos + (suma), - (resta), / (division). Ejemplo:
+
+```
+let numero1 = 6;
+let numero2 = 6;
+let resultado = numero1 + numero2;
+console.log(resultado) ---> 12
+```
+### PROMPT:
+    Se usa para que el usuario ingrese informacion al programa. Ejemplo:
+```
+let nombre = prompt('Ingrese su nombre: ') ---> El mensaje escrito entre '' es el que va a ver el usuario en el navegador
+
+alert('Tu nombre es' + ' ' + nombre);
+```
+# * IMPORTANTE * 
+    prompt solo deja ingresar datos de tipo cadena de caracteres o strings, lo que quiere decir que si se ingresa 6 en realidad no es un numero si no que el caracter '6'.
+    Para hacer que el prompt convierta el caracter en un numero se utiliza:
+
+    parseInt(prompt('mensaje')) o Number(prompt('mensaje'))
+
+    parseInt y Number hacen que el dato sea un numero, lo que nos deja operar con el, ejemplo:
+```
+let numero1 = parseInt(prompt('Ingrese un numero: '))
+let numero2 = parseInt(prompt('Ingrese un segundo numero: '))
+
+let operacion = numero1 + numero2;
+
+alert('La suma de esos dos numeros es' + ' ' + operacion)
+```
+
+# FIN :)
