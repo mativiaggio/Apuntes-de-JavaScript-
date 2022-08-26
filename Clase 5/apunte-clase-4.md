@@ -145,4 +145,5 @@ class Usuario {
 const coderhouse = new Usuario("Coder", "Permitido");
 
 console.log(coderhouse.mostrarInfoDeAcceso());
+
 ```
